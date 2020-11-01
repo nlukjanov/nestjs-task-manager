@@ -7,6 +7,7 @@ import {
   UsePipes,
   ValidationPipe,
 } from '@nestjs/common';
+import { Delete } from '@nestjs/common/decorators/http/request-mapping.decorator';
 import { Body } from '@nestjs/common/decorators/http/route-params.decorator';
 import { CreateTaskDto } from './dto/create-task.dto';
 import { Task } from './task.entity';
@@ -36,10 +37,10 @@ export class TasksController {
     return this.tasksService.createTask(createTaskDto);
   }
 
-  // @Delete(':id')
-  // deleteTask(@Param('id') id: string): void {
-  //   this.tasksService.deleteTask(id);
-  // }
+  @Delete(':id')
+  deleteTask(@Param('id', ParseIntPipe) id: number): Promise<void> {
+    return this.tasksService.deleteTask(id);
+  }
 
   // @Patch(':id/status')
   // updateTask(
