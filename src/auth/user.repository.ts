@@ -17,10 +17,8 @@ export class UserRepository extends Repository<User> {
     user.salt = await bcrypt.genSalt();
     user.password = await this.hashPassword(password, user.salt);
 
-    console.log(user.salt, user.password);
-
     try {
-      // await user.save();
+      await user.save();
     } catch (error) {
       if (error.code === '23505') {
         throw new ConflictException('Username already exists');
