@@ -3,7 +3,7 @@ import {
   Column,
   Entity,
   PrimaryGeneratedColumn,
-  Unique
+  Unique,
 } from 'typeorm';
 
 @Entity()
@@ -17,4 +17,7 @@ export class User extends BaseEntity {
 
   @Column()
   password: string;
+
+  @Column()
+  salt: string;
 }
