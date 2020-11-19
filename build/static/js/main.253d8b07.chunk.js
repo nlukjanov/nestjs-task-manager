@@ -1149,7 +1149,7 @@
         tt = (function () {
           function e(t) {
             Object(p.a)(this, e),
-              (this.BASE_URL = 'http://localhost:3000'),
+              (this.BASE_URL = 'http://localhost:3000/api'),
               (this._accessToken = null),
               (this.routerStore = t);
           }
@@ -1936,4 +1936,4 @@
   },
   [[107, 1, 2]],
 ]);
-//# sourceMappingURL=main.34a77f54.chunk.js.map
+//# sourceMappingURL=main.253d8b07.chunk.js.map
