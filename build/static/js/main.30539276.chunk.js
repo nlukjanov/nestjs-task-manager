@@ -1155,7 +1155,6 @@
               }).REACT_APP_BASE_URL_PROD),
               (this._accessToken = null),
               (this.routerStore = t);
-            console.log(this.BASE_URL);
           }
           return (
             Object(h.a)(e, [
@@ -1940,4 +1939,4 @@
   },
   [[107, 1, 2]],
 ]);
-//# sourceMappingURL=main.2b456922.chunk.js.map
+//# sourceMappingURL=main.30539276.chunk.js.map
