@@ -129,18 +129,18 @@
           e
         );
       }
-      function R() {
+      function M() {
         var e = Object(g.a)(['\n  margin-top: 0;\n']);
         return (
-          (R = function () {
+          (M = function () {
             return e;
           }),
           e
         );
       }
       var I,
-        M = y.a.h1(R()),
-        N = y.a.div(D()),
+        N = y.a.h1(M()),
+        R = y.a.div(D()),
         U = Object(y.a)(O.a)(A()),
         B =
           Object(i.b)('userStore', 'routerStore')(
@@ -212,9 +212,9 @@
                         'div',
                         { className: 'fullscreen-wrapper' },
                         r.a.createElement(
-                          N,
+                          R,
                           null,
-                          r.a.createElement(M, null, 'Hello!'),
+                          r.a.createElement(N, null, 'Hello!'),
                           r.a.createElement(
                             'p',
                             null,
@@ -282,19 +282,8 @@
             })(a.Component)),
           ) || x;
       n(127);
-      function L() {
-        var e = Object(g.a)(['\n  width: 100%;\n']);
-        return (
-          (L = function () {
-            return e;
-          }),
-          e
-        );
-      }
       function z() {
-        var e = Object(g.a)([
-          '\n  max-width: 480px;\n  width: 100%;\n  background-color: #edf4ff;\n  padding: 30px;\n  border-radius: 5px;\n',
-        ]);
+        var e = Object(g.a)(['\n  width: 100%;\n']);
         return (
           (z = function () {
             return e;
@@ -303,7 +292,9 @@
         );
       }
       function F() {
-        var e = Object(g.a)(['\n  margin-top: 0;\n']);
+        var e = Object(g.a)([
+          '\n  max-width: 480px;\n  width: 100%;\n  background-color: #edf4ff;\n  padding: 30px;\n  border-radius: 5px;\n',
+        ]);
         return (
           (F = function () {
             return e;
@@ -311,10 +302,19 @@
           e
         );
       }
-      var W,
-        H = y.a.h1(F()),
-        G = y.a.div(z()),
-        $ = Object(y.a)(O.a)(L()),
+      function W() {
+        var e = Object(g.a)(['\n  margin-top: 0;\n']);
+        return (
+          (W = function () {
+            return e;
+          }),
+          e
+        );
+      }
+      var H,
+        L = y.a.h1(W()),
+        G = y.a.div(F()),
+        $ = Object(y.a)(O.a)(z()),
         J =
           Object(i.b)('userStore', 'routerStore')(
             (I = (function (e) {
@@ -383,7 +383,7 @@
                         r.a.createElement(
                           G,
                           null,
-                          r.a.createElement(H, null, 'Join us!'),
+                          r.a.createElement(L, null, 'Join us!'),
                           r.a.createElement(
                             'p',
                             null,
@@ -449,10 +449,10 @@
               );
             })(a.Component)),
           ) || I,
-        K = n(204),
-        V = n(203),
-        q = n(101),
-        Q = n.n(q),
+        q = n(204),
+        K = n(203),
+        Q = n(101),
+        V = n.n(Q),
         X = n(102),
         Y = n.n(X),
         Z = n(199),
@@ -487,7 +487,7 @@
         he = y.a.h1(oe()),
         fe =
           Object(i.b)('tasksStore')(
-            (W = (function (e) {
+            (H = (function (e) {
               function t() {
                 var e, n;
                 Object(p.a)(this, t);
@@ -575,7 +575,7 @@
                                 ne.a,
                                 { item: !0 },
                                 r.a.createElement(
-                                  V.a,
+                                  K.a,
                                   { onClick: this.deleteTask },
                                   r.a.createElement(ie.a, { color: 'error' }),
                                 ),
@@ -590,7 +590,7 @@
                 t
               );
             })(a.Component)),
-          ) || W,
+          ) || H,
         de = n(210),
         me = n(100),
         ve = n.n(me),
@@ -813,14 +813,14 @@
         );
       }
       var De,
-        Re = y.a.div(Ae()),
+        Me = y.a.div(Ae()),
         Ie = y.a.div(Pe()),
-        Me = y.a.h1(_e()),
-        Ne = y.a.div(Ce()),
+        Ne = y.a.h1(_e()),
+        Re = y.a.div(Ce()),
         Ue = y.a.div(Te()),
         Be = y.a.p(xe()),
-        Le = y.a.div(Se()),
-        ze =
+        ze = y.a.div(Se()),
+        Fe =
           Object(i.b)('tasksStore', 'routerStore', 'userStore')(
             (je =
               Object(i.c)(
@@ -880,17 +880,17 @@
                         value: function () {
                           var e = this;
                           return r.a.createElement(
-                            Re,
+                            Me,
                             null,
                             r.a.createElement(
                               Ie,
                               null,
-                              r.a.createElement(Me, null, 'Get things done.'),
+                              r.a.createElement(Ne, null, 'Get things done.'),
                               r.a.createElement(
-                                Ne,
+                                Re,
                                 null,
                                 r.a.createElement(
-                                  K.a,
+                                  q.a,
                                   {
                                     variant: 'extended',
                                     onClick: function () {
@@ -899,14 +899,14 @@
                                       );
                                     },
                                   },
-                                  r.a.createElement(Q.a, null),
+                                  r.a.createElement(V.a, null),
                                   'Create Task',
                                 ),
                                 r.a.createElement(
-                                  Le,
+                                  ze,
                                   null,
                                   r.a.createElement(
-                                    V.a,
+                                    K.a,
                                     { onClick: this.handleSignOut },
                                     r.a.createElement(Y.a, {
                                       className: 'signOutIcon',
@@ -926,20 +926,9 @@
                 })(a.Component)),
               ) || je),
           ) || je;
-      function Fe() {
-        var e = Object(g.a)([
-          '\n  max-width: 480px;\n  width: 100%;\n  background-color: #edf4ff;\n  padding: 30px;\n  border-radius: 5px;\n',
-        ]);
-        return (
-          (Fe = function () {
-            return e;
-          }),
-          e
-        );
-      }
       function We() {
         var e = Object(g.a)([
-          '\n  width: 100vw;\n  height: 100vh;\n  display: flex;\n  align-items: center;\n  justify-content: center;\n',
+          '\n  max-width: 480px;\n  width: 100%;\n  background-color: #edf4ff;\n  padding: 30px;\n  border-radius: 5px;\n',
         ]);
         return (
           (We = function () {
@@ -948,9 +937,20 @@
           e
         );
       }
-      var He,
-        Ge = y.a.div(We()),
-        $e = y.a.div(Fe()),
+      function He() {
+        var e = Object(g.a)([
+          '\n  width: 100vw;\n  height: 100vh;\n  display: flex;\n  align-items: center;\n  justify-content: center;\n',
+        ]);
+        return (
+          (He = function () {
+            return e;
+          }),
+          e
+        );
+      }
+      var Le,
+        Ge = y.a.div(He()),
+        $e = y.a.div(We()),
         Je =
           Object(i.b)('tasksStore', 'routerStore')(
             (De = (function (e) {
@@ -1080,11 +1080,11 @@
               );
             })(a.Component)),
           ) || De,
-        Ke =
+        qe =
           Object(i.b)('routerStore')(
-            (He =
+            (Le =
               Object(i.c)(
-                (He = (function (e) {
+                (Le = (function (e) {
                   function t() {
                     return (
                       Object(p.a)(this, t),
@@ -1116,7 +1116,7 @@
                             r.a.createElement(l.a, {
                               exact: !0,
                               path: '/tasks',
-                              component: ze,
+                              component: Fe,
                             }),
                             r.a.createElement(l.a, {
                               exact: !0,
@@ -1130,8 +1130,8 @@
                     t
                   );
                 })(a.Component)),
-              ) || He),
-          ) || He;
+              ) || Le),
+          ) || Le;
       Boolean(
         'localhost' === window.location.hostname ||
           '[::1]' === window.location.hostname ||
@@ -1139,9 +1139,9 @@
             /^127(?:\.(?:25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)){3}$/,
           ),
       );
-      var Ve,
-        qe,
+      var Ke,
         Qe,
+        Ve,
         Xe,
         Ye,
         Ze = n(43),
@@ -1149,10 +1149,8 @@
         tt = (function () {
           function e(t) {
             Object(p.a)(this, e),
-              (this.BASE_URL = Object({
-                NODE_ENV: 'production',
-                PUBLIC_URL: '',
-              }).BASE_URL_PROD),
+              (this.BASE_URL =
+                'https://nest-cloud-run-prod-qhjk2iicaa-nw.a.run.app/api'),
               (this._accessToken = null),
               (this.routerStore = t);
           }
@@ -1481,11 +1479,11 @@
         ct = n(28),
         it = (n(94), n(12)),
         ot =
-          ((Ve = (function () {
+          ((Ke = (function () {
             function e(t) {
               Object(p.a)(this, e),
-                Object(st.a)(this, 'tasks', qe, this),
-                Object(st.a)(this, 'filters', Qe, this),
+                Object(st.a)(this, 'tasks', Qe, this),
+                Object(st.a)(this, 'filters', Ve, this),
                 (this.tasksService = t);
             }
             return (
@@ -1644,7 +1642,7 @@
               e
             );
           })()),
-          (qe = Object(ct.a)(Ve.prototype, 'tasks', [it.observable], {
+          (Qe = Object(ct.a)(Ke.prototype, 'tasks', [it.observable], {
             configurable: !0,
             enumerable: !0,
             writable: !0,
@@ -1652,7 +1650,7 @@
               return [];
             },
           })),
-          (Qe = Object(ct.a)(Ve.prototype, 'filters', [it.observable], {
+          (Ve = Object(ct.a)(Ke.prototype, 'filters', [it.observable], {
             configurable: !0,
             enumerable: !0,
             writable: !0,
@@ -1661,41 +1659,41 @@
             },
           })),
           Object(ct.a)(
-            Ve.prototype,
+            Ke.prototype,
             'resetTasks',
             [it.action],
-            Object.getOwnPropertyDescriptor(Ve.prototype, 'resetTasks'),
-            Ve.prototype,
+            Object.getOwnPropertyDescriptor(Ke.prototype, 'resetTasks'),
+            Ke.prototype,
           ),
           Object(ct.a)(
-            Ve.prototype,
+            Ke.prototype,
             'fetchTasks',
             [it.action],
-            Object.getOwnPropertyDescriptor(Ve.prototype, 'fetchTasks'),
-            Ve.prototype,
+            Object.getOwnPropertyDescriptor(Ke.prototype, 'fetchTasks'),
+            Ke.prototype,
           ),
           Object(ct.a)(
-            Ve.prototype,
+            Ke.prototype,
             'createTask',
             [it.action],
-            Object.getOwnPropertyDescriptor(Ve.prototype, 'createTask'),
-            Ve.prototype,
+            Object.getOwnPropertyDescriptor(Ke.prototype, 'createTask'),
+            Ke.prototype,
           ),
           Object(ct.a)(
-            Ve.prototype,
+            Ke.prototype,
             'deleteTask',
             [it.action],
-            Object.getOwnPropertyDescriptor(Ve.prototype, 'deleteTask'),
-            Ve.prototype,
+            Object.getOwnPropertyDescriptor(Ke.prototype, 'deleteTask'),
+            Ke.prototype,
           ),
           Object(ct.a)(
-            Ve.prototype,
+            Ke.prototype,
             'updateTaskStatus',
             [it.action],
-            Object.getOwnPropertyDescriptor(Ve.prototype, 'updateTaskStatus'),
-            Ve.prototype,
+            Object.getOwnPropertyDescriptor(Ke.prototype, 'updateTaskStatus'),
+            Ke.prototype,
           ),
-          Ve),
+          Ke),
         ut =
           ((Xe = (function () {
             function e(t) {
@@ -1928,7 +1926,7 @@
       var mt = r.a.createElement(
         i.a,
         ht,
-        r.a.createElement(l.b, { history: dt }, r.a.createElement(Ke, null)),
+        r.a.createElement(l.b, { history: dt }, r.a.createElement(qe, null)),
       );
       c.a.render(mt, document.getElementById('root')),
         'serviceWorker' in navigator &&
@@ -1939,4 +1937,4 @@
   },
   [[107, 1, 2]],
 ]);
-//# sourceMappingURL=main.1b03f3db.chunk.js.map
+//# sourceMappingURL=main.5e29b7ee.chunk.js.map
